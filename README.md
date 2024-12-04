@@ -43,6 +43,7 @@ First put your OpenAI API key in a file named ```api_key.txt```.
 Details could be found in the param descriptions in ```main_*.py```. For example, to run the invalid reasoning setting on GSM8K and Bamboogle:
 ```bash
 python main_gsm8k.py --prompt_dir prompts_arithmetic/invalid_reasoning.txt --eng gpt-3.5-turbo-instruct --num_test 800 --seed 1357 --temp 0.0 --test_ind indices_800.json
+python main_gsm8k_suffix.py --prompt_dir suffix.txt --eng gpt-3.5-turbo-instruct --num_test 800 --seed 1357 --temp 0.0 --test_ind indices_800.json --suffix "Let's think step by step."
 ```
 ```bash
 python main_bamboogle.py --prompt_dir prompts_bamboogle/invalid_reasoning.txt --eng gpt-3.5-turbo-instruct --num_test -1 --seed 1357 --temp 0.0
